@@ -1,7 +1,7 @@
-5862fbbf641d05dda862d91245fba101 *DESCRIPTION
+2cc7bb1e8b51e241c2a2e5151ddfc1b7 *DESCRIPTION
 a04911cd5ed1052b195b5ca817467880 *NAMESPACE
 b478201476a095154dbfed6e0d10f28c *R/doc.R
-0231cec4c61f5c95762783efdc9bb4e5 *R/mail.R
+ba11c273b4a3a02155a1e2ea4bff3795 *R/mail.R
 69e63345c26345a97e60af8680663227 *R/reader.R
 e6b322669ac658275a16e71446c67da9 *R/source.R
 099409c7bed873a7b01d7251043995ef *R/zzz.R
@@ -17,7 +17,7 @@ b9ed86a36d456113a269f32e8e2339d4 *inst/mails/58966
 5c21319dc0788dbdcda26453f67dc838 *man/MailDocument.Rd
 f340d6719c41317eb7550fe0df45fb0e *man/convert_mbox_eml.Rd
 d07a32581e9f73bc435dc4c70fb3f79d *man/readMail.Rd
-8ee0b149d332fd406396b757b39a4efc *man/removeCitation.Rd
-1d53cebb0fac333c0a013cffc02cac94 *man/removeMultipart.Rd
-a4aa890d6e26621f31ad7bc07f981383 *man/removeSignature.Rd
+2857973539ba439f10aa3993b6fda069 *man/removeCitation.Rd
+43a9f2118a97201182b51e1d28b010c8 *man/removeMultipart.Rd
+87f2b869f9067b78ae99d231229d9bba *man/removeSignature.Rd
 09a1426164543dde4ddbd0ec60221251 *man/threads.Rd

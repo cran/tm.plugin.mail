@@ -1,19 +1,23 @@
 \name{removeSignature}
 \alias{removeSignature}
 \alias{removeSignature.MailDocument}
+\alias{removeSignature.character}
 \title{Remove E-Mail Signatures}
 \description{
   Remove signature lines from an e-mail message.
 }
 \usage{
+removeSignature(x, \dots)
 \method{removeSignature}{MailDocument}(x, \dots)
+\method{removeSignature}{character}(x, marks = character(), \dots)
 }
 \arguments{
-  \item{x}{A mail document.}
-  \item{\dots}{the argument \code{marks} giving a character of signature
-    identifications marks (in form of regular expression patterns).
+  \item{x}{A mail document or character vector.}
+  \item{marks}{a character vector of signature identifications marks (in
+    form of regular expression patterns). 
     Note that the official signature start mark \code{-- } (dash dash
     blank) is always considered.}
+  \item{\dots}{arguments to be passed to and from methods.}
 }
 \seealso{
   \code{\link{removeCitation}} to remove e-mail citations, and

@@ -20,11 +20,11 @@ function(mbox, dir, format = "mbox", delim = NULL)
 
 ## Remove e-mail citations beginning with >
 removeCitation <-
-function(x, removeQuoteHeader)
+function(x, ...)
     UseMethod("removeCitation", x)
 
 removeCitation.character <-
-function(x, removeQuoteHeader = FALSE)
+function(x, removeQuoteHeader = FALSE, ...)
 {
     citations <- grep("^[[:blank:]]*>", x, useBytes = TRUE)
     if (removeQuoteHeader) {
@@ -59,11 +59,11 @@ function(x, removeQuoteHeader = FALSE)
 
 ## Remove non-text parts from multipart e-mail messages
 removeMultipart <-
-function(x)
+function(x, ...)
     UseMethod("removeMultipart", x)
 
 removeMultipart.character <-
-function(x)
+function(x, ...)
 {
     ## <http://en.wikipedia.org/wiki/Multipart_message#Multipart_Messages>
     ## We are only interested in text/plain parts
@@ -112,11 +112,11 @@ removeMultipart.MailDocument <-
 
 # Remove e-mail signatures
 removeSignature <-
-function(x, marks)
+function(x, ...)
     UseMethod("removeSignature", x)
 
 removeSignature.character <-
-function(x, marks = character())
+function(x, marks = character(), ...)
 {
     ## "---" is often added to Sourceforge mails
     ## "___" and "***" are also common, i.e.,
